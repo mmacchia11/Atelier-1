@@ -28,7 +28,7 @@
         <h2 class="main-descripcion"><strong>¡Elegí la que mejor se adapte a vos!</strong></h2>
     </main>
 
-    <section> <!-- TIPOS DE ILUSTRACIONES -->
+    <section class="seccion-ilustraciones"> <!-- TIPOS DE ILUSTRACIONES -->
         <article class="card-presentacion">
 
             <div class="card-img-container">
@@ -98,45 +98,55 @@
     </section>
 
     
-    <section> <!-- FONDO ILUSTRADO -->      
-        <article>
-            <div>
-                <img src="#" alt="">
-                <img src="#" alt="">
-            </div>
-        </article>
-        <article class="">
-            <h2>Agregá tu fondo ilustrado</h2>
-            <p>A ilustraciones "minimalistas", "detalladas", de "mascota" o de producto podés agregarles el fondo ilustrado. Cada pequeño detalle de las ilustraciones es realizado a mano en tableta gráfica, nada se genera automáticamente, incluso los fondos.</p>
+    <section class="fondo-ilustrado-container"> <!-- FONDO ILUSTRADO -->      
+        <article class="modal-container">
+            <section class="modal-imagenes" >
+                <img class="modal-img" src="./assets/modal/fondoilustrado 1.png" alt="fondo ilustrado 1">
+                <img class="modal-img" src="./assets/modal/fondoilustrado 2.png" alt="fondo ilustrado 2">
+            </section>
+            <section class="modal-info">
+                <h2 class="modal-titulo">Agregá tu fondo ilustrado</h2>
+                <p class="modal-descripcion">A ilustraciones <strong>minimalistas</strong>, <strong>detalladas</strong>, de <strong>mascota</strong> o de <strong>producto</strong> podés agregarles el fondo ilustrado. Cada pequeño detalle de las ilustraciones es realizado a mano en tableta gráfica, nada se genera automáticamente, incluso los fondos.</p>
+            </section>
         </article>
     </section>
-    <section> <!-- ANTES Y DESPUES -->
-        <h2>Antes y después</h2>
-        <h3>Podés ver aquí las fotos originales de clientes que confiaron en mis trabajos!</h3>
-    </section>
-    <section><!-- PASOS PARA CONTRATAR -->
-        <article> 
-            <h2>¿Cómo pedir tu ilustración?</h2>
-            <h5>¡Es muy fácil!</h5>
-            <section>
-                <div> <!-- CREAR CIRCULO CON NUMERO identificador del paso --></div>
-                <p>Podés hacer click debajo del tipo de ilustración que quieras y te vas a comunicar a través de un mensaje de Whatsapp <!-- ?? REVISAR => ¿dónde hace click el Usuario, a dónde lo lleva? --></p>
-            </section>
-            <section>
-                <div> <!-- CREAR CIRCULO CON NUMERO identificador del paso --></div>
-                <p>Te pediré que me envíes tu foto para verificar la calidad y confirmarte si es posible ilustrarla</p>
-            </section>
-            <section>
-                <div> <!-- numero de paso --></div>
-                <p>También te daré la fecha y hora de entrega y te proporcionaré los datos para realizar tu pago.</p>
-            </section>
-            <section>
-                <div> <!-- numero de paso --></div>
-                <h6>Y listo!</h6>
-                <p>Una vez realizado el pago se agenda tu ilustración, recordá encargarla con un mínimo de 4 días de anticipación.</p>
-            </section>
-            <p>El día de entrega recibirás un email con tu ilustración terminada! Se envía en dos formatos: PNG y JPG. Te enviaré además al menos tres opciones de fondo de color listo en caso de que tu ilustración no sea con fondo ilustrado.</p>
-        </article>
+
+    <article class="ayd-container"> <!-- ANTES Y DESPUES -->
+        <h2 class="ayd-title">Antes y después</h2>
+        <h3 class="ayd-descripcion">Podés ver aquí las fotos originales de clientes que confiaron en mis trabajos! <br>Desliza para ver!</h3>
+        <div class="ayd-img-container">
+            <img class="ayd-img" src="./assets/antes&despues/antes y despues 01.png" alt="" class="ayd-img">
+            <img class="ayd-img" src="./assets/antes&despues/antes y despues 02.png" alt="" class="ayd-img">
+            <img class="ayd-img" src="./assets/antes&despues/antes y despues 03.png" alt="" class="ayd-img">
+            <img class="ayd-img" src="./assets/antes&despues/antes y despues 04.png" alt="" class="ayd-img">
+        </div>
+    </article>
+
+    <section class="comopedir-container"><!-- PASOS PARA PEDIR -->
+        <div class="comopedir-text-container">
+            <h3 class="comopedir-title">¿Cómo pedir tu ilustración?</h3>
+            <h3 class="comopedir-title">¡Es muy fácil!</h3>
+        </div> 
+        <section class="comopedir-card">
+            <svg width="89" height="90" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.73 62.325V15.932a15.97 15.97 0 0 0-4.657-11.261A15.878 15.878 0 0 0 72.843 0H15.888a15.878 15.878 0 0 0-11.23 4.67A15.97 15.97 0 0 0 0 15.933v46.393a15.97 15.97 0 0 0 4.657 11.261 15.878 15.878 0 0 0 11.23 4.671h50.88a624.705 624.705 0 0 1-2.898-6.21H15.887a9.693 9.693 0 0 1-6.847-2.85 9.75 9.75 0 0 1-2.843-6.867V15.932A9.75 9.75 0 0 1 9.04 9.066a9.693 9.693 0 0 1 6.847-2.851h56.957a9.693 9.693 0 0 1 6.846 2.85 9.75 9.75 0 0 1 2.844 6.867v46.393a9.7 9.7 0 0 1-2.666 6.685c.832 1.993 1.83 3.907 2.773 5.838a15.901 15.901 0 0 0 4.484-5.557 15.947 15.947 0 0 0 1.605-6.966Z" fill="#E8BEAC"/><path d="M59.275 62.457c-.144-.35-.248-.633-.377-.905a21277.83 21277.83 0 0 0-13.17-27.872c-.432-.912-.713-2.145-1.448-2.589-.736-.444-1.988-.152-2.982-.12-4.56.15-8.346 3.43-8.974 7.747-.679 4.67 1.853 8.97 6.191 10.493 2.172.748 4.348.67 6.577-.1l2.01 5.086c-3.69 1.767-10.068 1.765-14.746-2.12-4.924-4.087-6.865-9.387-5.175-15.569 2.102-7.684 7.702-11.001 15.481-11.213V8.824c.306.194.418.249.512.326 4.426 3.606 8.847 7.217 13.263 10.832.315.286.569.635.745 1.024.567 1.119 1.088 2.26 1.648 3.436 2.79-1.51 4.67-3.69 5.078-6.763.318-2.402.171-4.869.229-7.306V9.294h5.553c0 2.328.025 4.608 0 6.888a14.729 14.729 0 0 1-3.133 8.928 15.416 15.416 0 0 1-5.327 4.37c.149.344.265.628.395.902l6.956 14.732c2.606 5.523 5.212 11.05 7.817 16.578l3.076 6.311c1.74 4.575 4.532 8.637 5.757 13.379v1.495c-.062.202-.14.399-.181.603-.497 2.447-1.787 4.316-3.976 5.524-4.017 2.218-8.9.613-10.932-3.638a1164.175 1164.175 0 0 1-7.57-16.077l-3.298-6.832Zm-11.059-42c0 1.48.04 2.742-.012 3.987a5.516 5.516 0 0 0 .579 2.664 31842.94 31842.94 0 0 1 22.44 47.526c.127.267.279.518.433.805l4.127-1.969c-.124-.281-.194-.45-.273-.615L52.65 24.402a2.215 2.215 0 0 0-.514-.748c-1.225-1.026-2.477-2.025-3.92-3.196ZM73.984 80.51c.497.996.89 1.94 1.401 2.81a2.212 2.212 0 0 0 2.815.868c1.044-.451 1.663-1.553 1.31-2.637-.338-1.034-.857-2.01-1.312-3.045l-4.214 2.004Z" fill="#E8BEAC"/></svg>
+            <h3 class="comopedir-card-title">Elige</h3>
+            <p class="comopedir-card-descripcion">Seleccione el tipo de ilustración que quieras para comunicarte directamente conmigo vía <strong>Whatsapp</strong>.<!-- ?? REVISAR => ¿dónde hace click el Usuario, a dónde lo lleva? --></p>
+        </section>
+        <section class="comopedir-card">
+            <svg width="102" height="90" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M101.302 71.422c-.376 1.565-.614 3.181-1.149 4.692-2.995 8.466-10.316 13.763-19.228 13.884-4.486.062-8.551-1.383-12.153-4.066a3.079 3.079 0 0 0-1.982-.667c-17.541.019-35.082.019-52.623 0-5.965 0-10.362-2.63-12.953-8.089A13.03 13.03 0 0 1 0 71.507V13.771C.017 5.92 5.913.064 13.878.04c18.53-.055 37.06-.055 55.59 0 8.07.023 13.813 5.952 13.828 14.071.016 11.277.016 22.554 0 33.83v.905c2.497.921 4.942 1.56 7.142 2.68 6.14 3.13 9.539 8.315 10.639 15.078.048.29.138.57.21.856l.015 3.961ZM5.158 51.926l.256.164a9.14 9.14 0 0 1 .668-.852c4.63-4.71 9.263-9.413 13.9-14.11 1.575-1.595 2.91-1.595 4.494 0 4.464 4.5 8.925 9.004 13.38 13.512.275.332.526.684.75 1.052.432-.53.66-.862.939-1.144 6.7-6.752 13.4-13.502 20.098-20.249 1.813-1.826 3.013-1.818 4.86.029l12.79 12.827c.235.236.491.451.88.81V14.37c0-5.439-3.627-9.061-9.068-9.064H14.208a10.204 10.204 0 0 0-2.74.308c-3.941 1.126-6.31 4.3-6.328 8.438-.017 12.431-.017 24.864 0 37.297-.005.195.018.388.018.578Zm56.575-16.47a7.49 7.49 0 0 1-.583.695 28185.452 28185.452 0 0 1-20.168 20.307c-1.616 1.627-3.038 1.622-4.668-.015a9740.94 9740.94 0 0 1-13.276-13.34 4.536 4.536 0 0 1-.56-.936c-.356.313-.45.351-.512.42A21397.076 21397.076 0 0 0 5.524 59.21a1.627 1.627 0 0 0-.374 1.044c-.028 3.735-.09 7.473.023 11.205a10.51 10.51 0 0 0 .857 3.812c1.607 3.664 4.84 4.995 8.495 5.018 15.86.098 31.72.041 47.579.039.278 0 .56-.026.923-.046-3.187-6.1-3.952-12.314-1.246-18.671 2.707-6.357 7.633-10.262 14.29-12.08L61.732 35.456Zm18.995 18.778c-8.441-.046-15.186 6.776-15.281 15.303-.097 8.681 7.418 15.202 15.15 15.225 8.457.028 15.3-6.641 15.372-15.092a15.29 15.29 0 0 0-1.107-5.901 15.252 15.252 0 0 0-3.293-5.015 15.168 15.168 0 0 0-10.841-4.52Z" fill="#E8BEAC"/><path d="M83.31 67.518c0 3.368.053 6.736-.04 10.105a3.88 3.88 0 0 1-.887 2.185c-.652.785-1.67.94-2.632.5-.962-.438-1.62-1.236-1.624-2.393v-10.69c-.555.552-.931.934-1.318 1.309-1.186 1.149-2.913 1.26-3.9.256-.988-1.003-.94-2.742.214-3.912 1.856-1.881 3.721-3.75 5.597-5.608 1.22-1.208 2.607-1.303 3.858-.115 2.046 1.931 4.005 3.93 5.947 5.957 1.023 1.06.951 2.778 0 3.686-.998.947-2.686.906-3.753-.139a15.611 15.611 0 0 1-1.12-1.362l-.343.22Z" fill="#E8BEAC"/></svg>
+            <h3 class="comopedir-card-title">Envía</h3>
+            <p class="comopedir-card-descripcion">Te pediré que me envíes tu foto para verificar la calidad y confirmarte si es posible ilustrarla. Te daré la fecha y hora de entrega y te proporcionaré los <strong>datos para realizar tu pago.</strong></p>
+        </section>
+        <section class="comopedir-card">
+            <svg width="103" height="90" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 75.81v-1.6c.361-.505.645-1.096 1.098-1.5 3.125-2.771 5.585-6.07 7.65-9.666 6.116-10.657 8.91-22.238 9.173-34.457.134-6.412.028-12.8.037-19.197 0-2.194 1.195-3.38 3.4-3.382h14.746V3.165c.028-1.838 1.318-3.176 3.027-3.154 1.71.023 2.919 1.341 2.95 3.134.016.923 0 1.848 0 2.805h14.958V3.307c0-1.952 1.242-3.293 2.985-3.296 1.743-.002 2.983 1.35 2.983 3.287v2.627h15.158V3.137C78.193 1.347 79.441.025 81.11 0c1.668-.025 3.002 1.31 3.033 3.15.014.923 0 1.846 0 2.847h14.243c2.619 0 3.706 1.082 3.706 3.683v76.582c0 2.673-1.07 3.738-3.747 3.738H20.898a3.007 3.007 0 0 1-2.056-.876 3.024 3.024 0 0 1-.887-2.057c-.02-.401 0-.8 0-1.201v-7.862h-1.176c-4.287 0-8.573-.059-12.86.028C2.09 78.079.774 77.497 0 75.81Zm96.112-45.746H23.898c-.706 15.3-4.662 29.473-14.05 41.946h66.824c3.57 0 3.614.025 5.871-2.788 9.149-11.402 12.751-24.728 13.569-39.158ZM84.157 12.03V14.8c-.022 1.86-1.273 3.198-2.98 3.203-1.706.006-2.974-1.332-2.996-3.184v-2.734H63.007v2.787c-.03 1.835-1.332 3.173-3.038 3.142-1.707-.03-2.91-1.352-2.939-3.144v-2.788H42.078v2.651c-.017 1.935-1.26 3.287-3.002 3.281-1.743-.005-2.966-1.363-2.978-3.306v-2.64H23.995v11.879h72.047V12.03H84.158Zm11.928 46.417c-.091.059-.163.078-.183.12-.133.279-.256.558-.38.814-2.97 6.384-6.603 12.311-11.676 17.268a4.654 4.654 0 0 1-3.483 1.38c-18.408-.032-36.818-.038-55.23-.02H23.98v5.944h72.108V58.447Z" fill="#E8BEAC"/></svg>
+            <h3 class="comopedir-card-title">Agenda</h3>
+            <p class="comopedir-card-descripcion">Una vez confirmado el pago se agenda tu ilustración, recordá encargarla con un <strong>mínimo de 4 días de anticipación.</strong></p>
+        </section>
+        <section class="comopedir-card">
+            <svg width="90" height="90" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M49.25 36.512a6.526 6.526 0 0 0 3.634-1.1 6.554 6.554 0 0 0 2.413-2.94 6.577 6.577 0 0 0-1.406-7.149 6.523 6.523 0 0 0-7.124-1.433 6.545 6.545 0 0 0-2.939 2.41 6.572 6.572 0 0 0-1.108 3.642c0 1.739.687 3.407 1.911 4.638a6.54 6.54 0 0 0 4.618 1.932Zm0-9.98a3.414 3.414 0 0 1 3.175 2.098 3.44 3.44 0 0 1-.719 3.746 3.418 3.418 0 0 1-5.854-2.396c0-.907.356-1.777.99-2.422a3.432 3.432 0 0 1 2.402-1.025h.005Z" fill="#E8BEAC"/><path d="M88.575 37.46c-4.673-4.076-9.321-8.178-13.996-12.254a1.555 1.555 0 0 1-.598-1.332c.032-1.641.019-3.282 0-4.923 0-1.897-1.044-2.944-2.922-2.954-2.045 0-4.09.026-6.133-.027a2.08 2.08 0 0 1-1.278-.533c-3.82-3.75-7.634-7.507-11.384-11.327C50.442 2.26 48.606.498 45.929 0H44c-2.595.341-4.39 1.945-6.14 3.73-3.87 3.947-7.81 7.826-11.75 11.705a2.082 2.082 0 0 1-1.274.532c-2.046.056-4.09.016-6.133.027-1.881 0-2.922 1.066-2.922 2.949 0 1.668.029 3.34-.027 5.008-.022.442-.205.86-.515 1.175-4.638 4.113-9.297 8.186-13.95 12.296C.78 37.87.424 38.489 0 39.021v43.954c.515 1.258.845 2.64 1.594 3.746C3.16 89.054 5.54 89.997 8.306 90H81.304c3.453 0 6.15-1.372 7.645-4.56a8.922 8.922 0 0 0 .797-3.642c.053-13.914.03-27.83.042-41.746a3.254 3.254 0 0 0-1.213-2.592Zm-14.52-5.72 9.09 7.976-9.09 7.992V31.74Zm-5.312 19.713a1.758 1.758 0 0 1-.648 1.505c-2.507 2.153-4.98 4.348-7.467 6.524-.194.17-.4.328-.65.533l-3.044-2.664c-2.221-1.95-4.42-3.921-6.668-5.842-3.314-2.834-7.437-2.842-10.76 0-3.039 2.614-6.03 5.28-9.031 7.923-.218.189-.444.365-.707.583-2.204-1.931-4.292-3.948-6.582-5.7-1.67-1.282-2.215-2.7-2.186-4.796.013-.847.021-1.694.03-2.541 3.604-2.637 7.408-5.272 10.988-7.872 1.636-1.19 3.344-1.023 4.965.4 2.672 2.344 5.312 4.723 7.995 7.054 2.244 1.952 4.781 2.541 7.623 1.483a9.607 9.607 0 0 0 1.392-.703c4.393-2.544 13.151-7.621 14.75-8.54-.005 4.21-.004 8.426.003 12.645l-.003.008ZM33.641 15.405c3.062-3.061 6.128-6.119 9.199-9.171 1.259-1.25 2.8-1.282 4.037-.062 3.14 3.108 6.27 6.227 9.39 9.356.095.096.175.21.37.442H33.183c.14-.197.293-.386.457-.565Zm-12.593 5.92h47.684V35.4c-5.344 3.098-11.14 6.214-16.468 9.323-1.889 1.103-3.538.938-5.174-.503a4898.483 4898.483 0 0 1-7.897-6.977c-2.84-2.507-6.208-2.664-9.27-.456-2.963 2.148-5.921 4.303-8.875 6.466.04-6.94 0-13.88 0-20.821v-1.108Zm-5.312 10.407v15.984L6.64 39.724l9.095-7.992ZM5.32 81.507V45.574c6.867 6.026 13.637 11.969 20.47 17.96L5.32 81.507Zm74.553 3.184H9.7c.411-.373.703-.64 1-.903L42.886 55.55c1.299-1.142 2.672-1.177 3.931-.074a85869.002 85869.002 0 0 1 32.64 28.658c.17.15.358.266.53.416l-.113.14Zm4.566-3.197L63.986 63.547l20.453-17.941v35.888Z" fill="#E8BEAC"/></svg>
+            <h3 class="comopedir-card-title">Recibe</h3>
+            <p class="comopedir-card-descripcion"><strong>Tu ilustración se enviará por correo</strong> en dos formatos: PNG y JPG. Te enviaré además al menos tres opciones de fondo de color listo en caso de que tu ilustración no sea con fondo ilustrado.</p>
+        </section>
     </section>
     
     <div> <!-- CONTACTO -->

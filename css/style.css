@@ -247,6 +247,84 @@ main .main-descripcion {
   color: #000000;
 }
 
+footer .contacto {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .contacto .whatsapp-container {
+  width: 20rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: #efefef;
+  background-color: #564c49;
+  border-radius: 2.5rem;
+  border: 3px solid #564c49;
+}
+footer .contacto .whatsapp-container .enviar-whatsapp-title {
+  font-family: "rubik";
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.4rem;
+}
+footer .contacto .whatsapp-container .enviar-whatsapp-ico {
+  font-size: 2.5rem;
+  align-self: center;
+  margin: 0 0.6rem;
+}
+footer .contacto .faq-container {
+  width: 20rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: #564c49;
+  background-color: #efefef;
+  border-radius: 2.5rem;
+  border: 3px solid #564c49;
+}
+footer .contacto .faq-container .faq {
+  font-family: "rubik";
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.4rem;
+}
+footer .footer-descripcion {
+  padding: 1rem;
+  font-family: "roboto";
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-align: start;
+}
+footer .contacto-links {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  font-family: "roboto";
+  font-size: 1rem;
+}
+footer .contacto-links a {
+  text-decoration: underline;
+  color: #564c49;
+}
+footer .contacto-links .instagram-logo {
+  font-size: 2.5rem;
+}
+footer .footer-logo-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: #e8beac;
+}
+footer .footer-logo-container .footer-logo {
+  width: 60vw;
+}
+
 /* OCULTAR ELEMENTOS */
 .oculto {
   display: none;

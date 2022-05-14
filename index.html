@@ -10,78 +10,110 @@
     <title>Atelier - Ilustraciones Personalizadas</title>
 </head>
 <body>
-    <nav>
-        <h1>logo aqui</h1>
-        <i class="fa-solid fa-bars"></i>
-        <ul>
-            <li>¿cómo pedir?</li>
-            <li>preguntas frecuentes</li>
-            <li>conocé el atelier</li>
+    <nav class="nav">
+        <i id="nav-burger-icon" class="fa-solid fa-bars"></i>
+        <img class="nav-logo" src="./assets/logo/logo-atelier.png" alt="atelier">
+        <ul class="nav-menu oculto">
+            <li class="nav-links">¿cómo pedir?</li>
+            <li class="nav-links">preguntas frecuentes</li>
+            <li class="nav-links">conocé el atelier</li>
         </ul>
-        <i class="fa-brands fa-whatsapp"></i>
+        <i id="nav-whatsapp-icon" class="fa-brands fa-whatsapp"></i>
     </nav>
 
     <main> <!-- PRESENTACIÓN -->
-        <p>Regalá momentos especiales con ilustraciones y diseños premium.</p>
-        <p>Tus recuerdos son muy importantes!, ¡Cada pequeño detalle de las ilustraciones es hecho a mano!</p>
-        <p>Cada elemento de la imagen está diseñado y pensado para que quede armónico en la composición completa.</p>
-        <p><strong>¡Elegí la que mejor se adapte a vos!</strong></p>
+        <h1 class="main-title">Regalá momentos especiales con ilustraciones y diseños premium.</h1>
+        <p class="main-descripcion">Tus recuerdos son muy importantes!, ¡Cada pequeño detalle de las ilustraciones es hecho a mano!</p>
+        <p class="main-descripcion">Cada elemento de la imagen está diseñado y pensado para que quede armónico en la composición completa.</p>
+        <h2 class="main-descripcion"><strong>¡Elegí la que mejor se adapte a vos!</strong></h2>
     </main>
 
     <section> <!-- TIPOS DE ILUSTRACIONES -->
-        <article>
-            <img src="#" alt="">
-            <h3>Detallada</h3>
-            <h4>Para quien el detalle lo es todo</h4>
-            <p>Fiel a la imagen original, colores más nítidos, se mantienen las texturas y rasgos, ideal para fotos con elevada calidad.</p>
+        <article class="card-presentacion">
+
+            <div class="card-img-container">
+                <img class="card-img" src="./assets/cards-img/img-detallada.png" alt="detallada">
+            </div>
+            <div class="card-descripcion-container">
+                <h3 class="card-title">Detallada</h3>
+                <h4 class="card-subtitle">Para quien el detalle lo es todo</h4>
+                <p class="card-descripcion">Fiel a la imagen original, colores más nítidos, se mantienen las texturas y rasgos, ideal para fotos con elevada calidad.</p>
+            </div>
         </article>
-        <article>
-            <img src="#" alt="">
-            <h3>Minimalista</h3>
-            <h4>Simple pero significativa</h4>
-            <p>Es perfecta para los que quieren simpleza, el nivel de detalle es el mínimo indispensable para que la composición final tenga sentido. Aunque es minimalista mantiene detalles esenciales como los tatuajes, piercing, accesorios, etc.</p>
+
+        <article class="card-presentacion">
+            <div class="card-img-container">
+                <img class="card-img" src="./assets/cards-img/img-minimalista.png" alt="minimalista">
+            </div>
+            <div class="card-descripcion-container">
+                <h3 class="card-title">Minimalista</h3>
+                <h4 class="card-subtitle">Simple pero significativa</h4>
+                <p class="card-descripcion">Es perfecta para los que quieren simpleza, el nivel de detalle es el mínimo indispensable para que la composición final tenga sentido. Aunque es minimalista mantiene detalles esenciales como los tatuajes, piercing, accesorios, etc.</p>
+            </div>
         </article>
-        <article> <!-- REPETIDA (VER PRIMERA) -->
-            <img src="#" alt="">
-            <h3>Mascota</h3>
-            <h4>Para quien el detalle lo es todo</h4>
-            <p>Fiel a la imagen original, colores más nítidos, se mantienen las texturas y rasgos, ideal para fotos con elevada calidad.</p>
+
+        <article class="card-presentacion"> <!-- REPETIDA (VER PRIMERA) -->
+            <div class="card-img-container">
+                <img class="card-img" src="./assets/cards-img/img-mascota.png" alt="mascota">
+            </div>
+            <div class="card-descripcion-container">
+                <h3 class="card-title">Mascota</h3>
+                <h4 class="card-subtitle">Para quien el detalle lo es todo</h4>
+                <p class="card-descripcion">Fiel a la imagen original, colores más nítidos, se mantienen las texturas y rasgos, ideal para fotos con elevada calidad.</p>
+            </div>
         </article>
-        <article>
-            <img src="#" alt="">
-            <h3>Intervención</h3>
-            <h4>Intervení tu momento</h4>
-            <p>Podés mandarme tus ideas de cómo querés intervenir tu foto favorita, trabajaré con esa imagen como base para ilustrar, no es necesario una elevada calidad, pero el resultado será mucho mejor si esta característica está presente. Pueden ser detalles lineales o más trabajados, lo elegís vos.</p>
+
+        <article class="card-presentacion">
+            <div class="card-img-container">
+                <img class="card-img" src="./assets/cards-img/img-intervencion.png" alt="intervencion">
+            </div>
+            <div class="card-descripcion-container">
+                <h3 class="card-title">Intervención</h3>
+                <h4 class="card-subtitle">Intervení tu momento</h4>
+                <p class="card-descripcion">Podés mandarme tus ideas de cómo querés intervenir tu foto favorita, trabajaré con esa imagen como base para ilustrar, no es necesario una elevada calidad, pero el resultado será mucho mejor si esta característica está presente. Pueden ser detalles lineales o más trabajados, lo elegís vos.</p>
+            </div>
         </article>
-        <article>
-            <img src="#" alt="">
-            <h3>Lineal</h3>
-            <h4>Un detalle sencillo con sentimiento.</h4>
-            <p>Súper simples a la vista pero simplemente perfectas!</p>
+
+        <article class="card-presentacion">
+            <div class="card-img-container">
+                <img class="card-img" src="./assets/cards-img/img-lineal.png" alt="lineal">
+            </div>
+            <div class="card-descripcion-container">
+                <h3 class="card-title">Lineal</h3>
+                <h4 class="card-subtitle">Un detalle sencillo con sentimiento.</h4>
+                <p class="card-descripcion">Súper simples a la vista pero simplemente perfectas!</p>
+            </div>
         </article>
-        <article>
-            <img src="#" alt="">
-            <h3>Marcas</h3>
-            <h4>Ilustrá</h4>
-            <p>Si querés destacar tu producto estrella de una manera diferente esta opción es para vos, podés contactarme vía Whatsapp o Instagram para coordinar!</p>
-        </article>
-        <article>
-            <h2>Agregá tu fondo ilustrado</h2>
-            <p>A ilustraciones "minimalistas", "detalladas", de "mascota" o de producto podés agregarles el fondo ilustrado. Cada pequeño detalle de las ilustraciones es realizado a mano en tableta gráfica, nada se genera automáticamente, incluso los fondos.</p>
-        </article>
+
+        <article class="card-presentacion">
+            <div class="card-img-container">
+                <img class="card-img" src="./assets/cards-img/img-marcas.png" alt="marcas">
+            </div>
+            <div class="card-descripcion-container">
+                <h3 class="card-title">Marcas</h3>
+                <h4 class="card-subtitle">Ilustrá</h4>
+                <p class="card-descripcion">Si querés destacar tu producto estrella de una manera diferente esta opción es para vos, podés contactarme vía Whatsapp o Instagram para coordinar!</p>
+            </div>
+        </article>    
     </section>
 
-    <section> <!-- ANTES Y DESPUES -->      
+    
+    <section> <!-- FONDO ILUSTRADO -->      
         <article>
-            <h2>Antes y después</h2>
-            <h3>Podés ver aquí las fotos originales de clientes que confiaron en mis trabajos!</h3>
-            <div> <!-- CARRUSEL -->
+            <div>
                 <img src="#" alt="">
                 <img src="#" alt="">
             </div>
         </article>
+        <article class="">
+            <h2>Agregá tu fondo ilustrado</h2>
+            <p>A ilustraciones "minimalistas", "detalladas", de "mascota" o de producto podés agregarles el fondo ilustrado. Cada pequeño detalle de las ilustraciones es realizado a mano en tableta gráfica, nada se genera automáticamente, incluso los fondos.</p>
+        </article>
     </section>
-
+    <section> <!-- ANTES Y DESPUES -->
+        <h2>Antes y después</h2>
+        <h3>Podés ver aquí las fotos originales de clientes que confiaron en mis trabajos!</h3>
+    </section>
     <section><!-- PASOS PARA CONTRATAR -->
         <article> 
             <h2>¿Cómo pedir tu ilustración?</h2>

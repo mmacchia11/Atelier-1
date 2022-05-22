@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* BASE */
 /* FONT RUBIK*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
@@ -17,24 +16,81 @@ html, body {
 }
 
 .nav {
+  user-select: none;
   padding: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 1.6rem;
-  color: #564c49;
   background-color: #e8beac;
 }
 .nav .nav-logo {
   width: 150px;
   margin: 0.7rem 1rem 0 1rem;
 }
+@media only screen and (min-width: 968px) {
+  .nav .nav-logo {
+    font-size: 38px;
+    width: 20vw;
+  }
+}
+.nav .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav .nav-menu .nav-links {
+  color: #564c49;
+  padding: 0.5rem;
+  list-style-type: none;
+  font-family: "rubik";
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: 1s ease-in;
+}
+.nav .nav-menu .nav-links :hover {
+  color: white;
+  text-decoration: underline;
+}
+.nav .nav-menu .nav-links a {
+  padding: 0.5rem;
+  color: #564c49;
+  text-decoration: none;
+}
+.nav .nav-menu .nav-whatsapp-container {
+  cursor: pointer;
+  width: 173px;
+  height: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: #efefef;
+  background-color: #564c49;
+  border-radius: 2.5rem;
+  border: 3px solid #564c49;
+}
+.nav .nav-menu .nav-whatsapp-container .whatsapp-title {
+  align-self: center;
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 1rem;
+}
+.nav .nav-menu .nav-whatsapp-container .whatsapp-ico {
+  font-size: 1rem;
+  align-self: center;
+  margin: 0 0.6rem;
+}
 
 main {
-  padding: 1rem;
+  padding: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  main {
+    margin: 0 auto;
+  }
 }
 main .main-title {
   margin-top: 3rem;
@@ -45,10 +101,16 @@ main .main-title {
   font-size: 1.75rem;
   line-height: 2rem;
 }
+@media only screen and (min-width: 1024px) {
+  main .main-title {
+    font-size: 38px;
+    width: 800px;
+  }
+}
 main .main-descripcion {
   font-family: "roboto";
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-align: center;
   line-height: 1rem;
 }
@@ -60,10 +122,16 @@ main .main-descripcion {
   display: flex;
   flex-wrap: nowrap;
 }
+@media only screen and (min-width: 968px) {
+  .seccion-ilustraciones {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
 .seccion-ilustraciones .card-presentacion {
-  width: 379px;
-  height: 524px;
-  margin: 0 5px;
+  max-width: 379px;
+  max-height: 524px;
+  margin: 5px 5px;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
@@ -82,7 +150,7 @@ main .main-descripcion {
   border-top-right-radius: 0.5rem;
 }
 .seccion-ilustraciones .card-presentacion .card-img-container .card-img {
-  width: 336px;
+  max-width: 336px;
 }
 .seccion-ilustraciones .card-presentacion .card-descripcion-container {
   padding: 1rem;
@@ -107,54 +175,74 @@ main .main-descripcion {
   line-height: 1.25rem;
 }
 
-/* 
-<section class="fondo-ilustrado-container"> <!-- FONDO ILUSTRADO -->      
-    <article class="modal-container">
-        <section class="modal-imagenes" >
-            <img class="modal-img" src="#" alt="">
-            <img class="modal-img" src="#" alt="">
-        </section>
-        <section class="modal-descripcion">
-        <h2>Agregá tu fondo ilustrado</h2>
-        <p>A ilustraciones "minimalistas", "detalladas", de "mascota" o de producto podés agregarles el fondo ilustrado. Cada pequeño detalle de las ilustraciones es realizado a mano en tableta gráfica, nada se genera automáticamente, incluso los fondos.</p>
-        </section>
-    </article>
-</section> 
-*/
 .fondo-ilustrado-container {
-  position: relative;
-  margin-bottom: 300px;
+  height: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  overflow: hidden;
 }
 .fondo-ilustrado-container .modal-container {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .fondo-ilustrado-container .modal-container .modal-imagenes {
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+@media only screen and (min-width: 968px) {
+  .fondo-ilustrado-container .modal-container .modal-imagenes {
+    flex-direction: row;
+  }
 }
 .fondo-ilustrado-container .modal-container .modal-imagenes .modal-img {
   width: 100vw;
 }
+@media only screen and (min-width: 968px) {
+  .fondo-ilustrado-container .modal-container .modal-imagenes .modal-img {
+    width: 50vw;
+  }
+}
 .fondo-ilustrado-container .modal-container .modal-info {
-  position: absolute;
+  padding: 1rem;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  width: 80%;
-  bottom: -13.55rem;
+  position: static;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1.8rem);
+}
+@media only screen and (min-width: 640px) {
+  .fondo-ilustrado-container .modal-container .modal-info {
+    transform: translateY(-3rem);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .fondo-ilustrado-container .modal-container .modal-info {
+    transform: translateY(-3.5rem);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .fondo-ilustrado-container .modal-container .modal-info {
+    transform: translateY(-4.5rem);
+    width: 65%;
+  }
 }
 .fondo-ilustrado-container .modal-container .modal-info .modal-titulo {
   font-family: "rubik";
+  font-size: 1.5rem;
   text-align: center;
   color: #564c49;
 }
 .fondo-ilustrado-container .modal-container .modal-info .modal-descripcion {
   font-family: "roboto";
+  font-size: 16px;
   text-align: center;
   color: #000000;
 }
@@ -169,6 +257,17 @@ main .main-descripcion {
   font-size: 1.75rem;
   text-align: center;
   color: #564c49;
+  margin-bottom: -0.75rem;
+}
+@media only screen and (min-width: 640px) {
+  .ayd-container .ayd-title {
+    font-size: 1.925rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ayd-container .ayd-title {
+    font-size: 2.1rem;
+  }
 }
 .ayd-container .ayd-descripcion {
   text-align: center;
@@ -177,30 +276,40 @@ main .main-descripcion {
   font-weight: 400;
   color: #000000;
 }
+@media only screen and (min-width: 640px) {
+  .ayd-container .ayd-descripcion {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ayd-container .ayd-descripcion {
+    font-size: 1.4rem;
+  }
+}
 .ayd-container .ayd-img-container {
   overflow: scroll;
   display: flex;
 }
+@media only screen and (min-width: 968px) {
+  .ayd-container .ayd-img-container {
+    overflow: hidden;
+  }
+}
 .ayd-container .ayd-img-container .ayd-img {
   width: 100vw;
 }
+@media only screen and (min-width: 968px) {
+  .ayd-container .ayd-img-container .ayd-img {
+    width: 50vw;
+  }
+}
 
-/* 
-<section class="comopedir-container"><!-- PASOS PARA PEDIR -->
-        <div>
-            <h3 class="comopedir-title">¿Cómo pedir tu ilustración?</h3>
-            <h3 class="comopedir-title">¡Es muy fácil!</h3>
-        </div> 
-        <section class="comopedir-card">
-            <svg width="89" height="90" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M88.73 62.325V15.932a15.97 15.97 0 0 0-4.657-11.261A15.878 15.878 0 0 0 72.843 0H15.888a15.878 15.878 0 0 0-11.23 4.67A15.97 15.97 0 0 0 0 15.933v46.393a15.97 15.97 0 0 0 4.657 11.261 15.878 15.878 0 0 0 11.23 4.671h50.88a624.705 624.705 0 0 1-2.898-6.21H15.887a9.693 9.693 0 0 1-6.847-2.85 9.75 9.75 0 0 1-2.843-6.867V15.932A9.75 9.75 0 0 1 9.04 9.066a9.693 9.693 0 0 1 6.847-2.851h56.957a9.693 9.693 0 0 1 6.846 2.85 9.75 9.75 0 0 1 2.844 6.867v46.393a9.7 9.7 0 0 1-2.666 6.685c.832 1.993 1.83 3.907 2.773 5.838a15.901 15.901 0 0 0 4.484-5.557 15.947 15.947 0 0 0 1.605-6.966Z" fill="#E8BEAC"/><path d="M59.275 62.457c-.144-.35-.248-.633-.377-.905a21277.83 21277.83 0 0 0-13.17-27.872c-.432-.912-.713-2.145-1.448-2.589-.736-.444-1.988-.152-2.982-.12-4.56.15-8.346 3.43-8.974 7.747-.679 4.67 1.853 8.97 6.191 10.493 2.172.748 4.348.67 6.577-.1l2.01 5.086c-3.69 1.767-10.068 1.765-14.746-2.12-4.924-4.087-6.865-9.387-5.175-15.569 2.102-7.684 7.702-11.001 15.481-11.213V8.824c.306.194.418.249.512.326 4.426 3.606 8.847 7.217 13.263 10.832.315.286.569.635.745 1.024.567 1.119 1.088 2.26 1.648 3.436 2.79-1.51 4.67-3.69 5.078-6.763.318-2.402.171-4.869.229-7.306V9.294h5.553c0 2.328.025 4.608 0 6.888a14.729 14.729 0 0 1-3.133 8.928 15.416 15.416 0 0 1-5.327 4.37c.149.344.265.628.395.902l6.956 14.732c2.606 5.523 5.212 11.05 7.817 16.578l3.076 6.311c1.74 4.575 4.532 8.637 5.757 13.379v1.495c-.062.202-.14.399-.181.603-.497 2.447-1.787 4.316-3.976 5.524-4.017 2.218-8.9.613-10.932-3.638a1164.175 1164.175 0 0 1-7.57-16.077l-3.298-6.832Zm-11.059-42c0 1.48.04 2.742-.012 3.987a5.516 5.516 0 0 0 .579 2.664 31842.94 31842.94 0 0 1 22.44 47.526c.127.267.279.518.433.805l4.127-1.969c-.124-.281-.194-.45-.273-.615L52.65 24.402a2.215 2.215 0 0 0-.514-.748c-1.225-1.026-2.477-2.025-3.92-3.196ZM73.984 80.51c.497.996.89 1.94 1.401 2.81a2.212 2.212 0 0 0 2.815.868c1.044-.451 1.663-1.553 1.31-2.637-.338-1.034-.857-2.01-1.312-3.045l-4.214 2.004Z" fill="#E8BEAC"/></svg>
-            <h3>Elige</h3>
-            <p>Seleccione el tipo de ilustración que quieras para comunicarte directamente conmigo vía <strong>Whatsapp</strong>.<!-- ?? REVISAR => ¿dónde hace click el Usuario, a dónde lo lleva? --></p>
-        </section>
- */
 .comopedir-container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
+  margin-bottom: 3rem;
 }
 .comopedir-container .comopedir-text-container {
   display: flex;
@@ -222,29 +331,68 @@ main .main-descripcion {
   line-height: 2.5rem;
   text-align: center;
 }
-.comopedir-container .comopedir-card {
+@media only screen and (min-width: 968px) {
+  .comopedir-container .comopedir-card-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+}
+.comopedir-container .comopedir-card-container .comopedir-card {
+  height: 100%;
   margin-top: 3rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
-.comopedir-container .comopedir-card .comopedir-card-title {
-  text-align: center;
+@media only screen and (min-width: 968px) {
+  .comopedir-container .comopedir-card-container .comopedir-card {
+    flex-direction: column;
+    align-items: start;
+    justify-items: space-around;
+  }
+}
+.comopedir-container .comopedir-card-container .comopedir-card .comopedir-card-icon {
+  margin-bottom: 1rem;
+}
+.comopedir-container .comopedir-card-container .comopedir-card .comopedir-card-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 968px) {
+  .comopedir-container .comopedir-card-container .comopedir-card .comopedir-card-description-container {
+    max-width: 250px;
+    height: 220px;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-items: flex-start;
+    border-right: 2px solid #564c49;
+  }
+}
+.comopedir-container .comopedir-card-container .comopedir-card .comopedir-card-description-container .comopedir-card-title {
   font-family: "rubik";
   color: #564c49;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.5rem;
 }
-.comopedir-container .comopedir-card .comopedir-card-descripcion {
+.comopedir-container .comopedir-card-container .comopedir-card .comopedir-card-description-container .comopedir-card-descripcion {
   margin-top: 0;
   text-align: center;
   font-family: "roboto";
   font-weight: 400;
   line-height: 1.5rem;
   color: #000000;
+}
+@media only screen and (min-width: 968px) {
+  .comopedir-container .comopedir-card-container .comopedir-card .comopedir-card-description-container .comopedir-card-descripcion {
+    text-align: start;
+  }
 }
 
 footer .contacto {
@@ -291,14 +439,36 @@ footer .contacto .faq-container .faq {
   font-size: 1.125rem;
   line-height: 1.4rem;
 }
-footer .footer-descripcion {
+footer .footer-descripcion-container {
+  width: 100%;
+}
+@media only screen and (min-width: 968px) {
+  footer .footer-descripcion-container {
+    margin-top: 4rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+footer .footer-descripcion-container .footer-descripcion {
   padding: 1rem;
   font-family: "roboto";
   font-size: 1rem;
   line-height: 1.25rem;
   text-align: start;
 }
-footer .contacto-links {
+@media only screen and (min-width: 968px) {
+  footer .footer-descripcion-container .footer-descripcion {
+    margin-left: 2rem;
+    width: 250px;
+    flex-direction: column;
+    align-items: start;
+    justify-items: center;
+  }
+}
+footer .footer-descripcion-container .contacto-links {
   height: 120px;
   display: flex;
   flex-direction: column;
@@ -308,12 +478,22 @@ footer .contacto-links {
   font-family: "roboto";
   font-size: 1rem;
 }
-footer .contacto-links a {
-  text-decoration: underline;
+@media only screen and (min-width: 968px) {
+  footer .footer-descripcion-container .contacto-links {
+    justify-content: flex-end;
+    align-items: flex-end;
+    line-height: 2rem;
+  }
+}
+footer .footer-descripcion-container .contacto-links .contact-link {
+  text-decoration: none;
   color: #564c49;
 }
-footer .contacto-links .instagram-logo {
-  font-size: 2.5rem;
+footer .footer-descripcion-container .contacto-links .contact-link :hover {
+  text-decoration: underline;
+}
+footer .footer-descripcion-container .contacto-links .instagram-logo {
+  font-size: 2rem;
 }
 footer .footer-logo-container {
   padding: 1rem;
@@ -322,7 +502,7 @@ footer .footer-logo-container {
   background-color: #e8beac;
 }
 footer .footer-logo-container .footer-logo {
-  width: 60vw;
+  width: 200px;
 }
 
 /* OCULTAR ELEMENTOS */

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* BASE */
 /* FONT RUBIK*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
@@ -555,25 +554,10 @@ footer .footer-logo-container .footer-logo {
   line-height: 24px;
 }
 
-/* 
-<main class="conocenos-main">
-        <h1 class="conocenos-title">Conocé el Atelier</h1>
-        <article class="conocenos-description-container">
-            <img src="../assets/conocenos/conocenos-tablet.png" alt="tableta escritorio">
-            <p>Atelier by Fernanda Castro es un espacio en dónde podés retratar momentos y personas especiales con un toque de arte y originalidad a través de ilustraciones y diseños premium. El Atelier está en constante evolución y queremos plasmar recuerdos significativos para las personas de forma auténtica y con calidad. Cada detalle de las ilustraciones es hecho a mano a través de tableta gráfica, nada es generado automáticamente en los trabajos del Atelier, le damos la identidad e importancia que tu ilustración se merece.</p>
-        </article>
-        <article class="conocenos-artist">
-            <img src="../assets/conocenos/conocenos-fer.png" alt="">
-            <div class="artist-container">
-                <h2 class="conocenos-artist-title">Quién está detrás</h2>
-                <p class="conocenos-artist-description">¡Hola a tod@s! Mi nombre es Fernanda Castro, soy Licenciada en Administración y creadora del Atelier. Inicié mi emprendimiento de Ilustraciones Personalizadas en enero 2021, este Atelier es mi lugar seguro y está en constante evolución como yo. Aunque me dedico en lo profesional al e-commerce y administración de empresas, el Atelier es mi proyecto personal y me encanta plasmar momentos y recuerdos especiales. ¡Espero poder ilustrar para vos pronto! No dudes en contactarte conmigo para cualquier consulta, pedido o propuesta.</p>
-            </div>
-        </article>
-</main> 
-*/
 .conocenos-main {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .conocenos-main .conocenos-title {
   padding: 5rem;

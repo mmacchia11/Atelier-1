@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* BASE */
 /* FONT RUBIK*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
@@ -81,18 +82,18 @@ html, body {
   margin: 0 0.6rem;
 }
 
-main {
+.index-main {
   padding: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media only screen and (min-width: 768px) {
-  main {
+  .index-main {
     margin: 0 auto;
   }
 }
-main .main-title {
+.index-main .main-title {
   margin-top: 3rem;
   font-family: "rubik";
   font-weight: 500;
@@ -102,12 +103,12 @@ main .main-title {
   line-height: 2rem;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-title {
+  .index-main .main-title {
     font-size: 38px;
     width: 800px;
   }
 }
-main .main-descripcion {
+.index-main .main-descripcion {
   font-family: "roboto";
   font-weight: 400;
   font-size: 1rem;
@@ -407,6 +408,7 @@ footer .contacto .whatsapp-container {
   display: flex;
   align-content: center;
   justify-content: center;
+  letter-spacing: 3px;
   color: #efefef;
   background-color: #564c49;
   border-radius: 2.5rem;
@@ -505,9 +507,167 @@ footer .footer-logo-container .footer-logo {
   width: 200px;
 }
 
+.faq-title {
+  font-family: "rubik";
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 4rem 0;
+}
+@media only screen and (min-width: 968px) {
+  .faq-title {
+    font-size: 38px;
+  }
+}
+
+.faq-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.faq-card-container .faq-card {
+  max-width: 320px;
+  height: 560px;
+  padding: 1.5rem;
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.2);
+}
+.faq-card-container .faq-card .faq-card-img {
+  margin: 1rem 0;
+  width: 100%;
+}
+.faq-card-container .faq-card .faq-card-title {
+  font-family: "rubik";
+  font-size: 24px;
+}
+.faq-card-container .faq-card .faq-card-description {
+  margin-top: 3rem;
+  font-family: "roboto";
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+/* 
+<main class="conocenos-main">
+        <h1 class="conocenos-title">Conocé el Atelier</h1>
+        <article class="conocenos-description-container">
+            <img src="../assets/conocenos/conocenos-tablet.png" alt="tableta escritorio">
+            <p>Atelier by Fernanda Castro es un espacio en dónde podés retratar momentos y personas especiales con un toque de arte y originalidad a través de ilustraciones y diseños premium. El Atelier está en constante evolución y queremos plasmar recuerdos significativos para las personas de forma auténtica y con calidad. Cada detalle de las ilustraciones es hecho a mano a través de tableta gráfica, nada es generado automáticamente en los trabajos del Atelier, le damos la identidad e importancia que tu ilustración se merece.</p>
+        </article>
+        <article class="conocenos-artist">
+            <img src="../assets/conocenos/conocenos-fer.png" alt="">
+            <div class="artist-container">
+                <h2 class="conocenos-artist-title">Quién está detrás</h2>
+                <p class="conocenos-artist-description">¡Hola a tod@s! Mi nombre es Fernanda Castro, soy Licenciada en Administración y creadora del Atelier. Inicié mi emprendimiento de Ilustraciones Personalizadas en enero 2021, este Atelier es mi lugar seguro y está en constante evolución como yo. Aunque me dedico en lo profesional al e-commerce y administración de empresas, el Atelier es mi proyecto personal y me encanta plasmar momentos y recuerdos especiales. ¡Espero poder ilustrar para vos pronto! No dudes en contactarte conmigo para cualquier consulta, pedido o propuesta.</p>
+            </div>
+        </article>
+</main> 
+*/
+.conocenos-main {
+  display: flex;
+  flex-direction: column;
+}
+.conocenos-main .conocenos-title {
+  padding: 5rem;
+  font-family: "rubik";
+  font-size: 28px;
+  color: #564c49;
+  font-weight: 600;
+  text-align: center;
+}
+@media only screen and (min-width: 968px) {
+  .conocenos-main .conocenos-title {
+    font-size: 38px;
+  }
+}
+.conocenos-main .conocenos-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.conocenos-main .conocenos-description .conocenos-description-img {
+  width: 100vw;
+}
+@media only screen and (min-width: 968px) {
+  .conocenos-main .conocenos-description .conocenos-description-img {
+    width: 100vw;
+    height: 496px;
+    object-fit: cover;
+    object-position: 0 15%;
+  }
+}
+.conocenos-main .conocenos-description .conocenos-description-container {
+  margin-top: -2.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  width: 80%;
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.3);
+}
+@media only screen and (min-width: 968px) {
+  .conocenos-main .conocenos-description .conocenos-description-container {
+    width: 854px;
+    padding: 2rem;
+  }
+}
+.conocenos-main .conocenos-description .conocenos-description-container .conocenos-description-text {
+  font-family: "roboto";
+  font-size: 1rem;
+  text-align: center;
+}
+@media only screen and (min-width: 968px) {
+  .conocenos-main .conocenos-description .conocenos-description-container .conocenos-description-text {
+    font-size: 1.1rem;
+  }
+}
+.conocenos-main .conocenos-artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 968px) {
+  .conocenos-main .conocenos-artist {
+    flex-direction: row;
+    padding: 6rem;
+  }
+}
+.conocenos-main .conocenos-artist .conocenos-artist-img {
+  width: 100vw;
+}
+@media only screen and (min-width: 968px) {
+  .conocenos-main .conocenos-artist .conocenos-artist-img {
+    width: 584px;
+  }
+}
+.conocenos-main .conocenos-artist .artist-container {
+  padding: 2rem;
+}
+.conocenos-main .conocenos-artist .artist-container .conocenos-artist-title {
+  color: #564c49;
+  font-family: "rubik";
+  font-weight: 700;
+}
+.conocenos-main .conocenos-artist .artist-container .conocenos-artist-description {
+  font-family: "roboto";
+}
+@media only screen and (min-width: 968px) {
+  .conocenos-main .conocenos-artist .artist-container .conocenos-artist-description {
+    width: 580px;
+  }
+}
+
 /* OCULTAR ELEMENTOS */
 .oculto {
-  display: none;
+  display: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */

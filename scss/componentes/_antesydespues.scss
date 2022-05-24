@@ -1,0 +1,48 @@
+.ayd-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    .ayd-title{
+        font-family: nth($fonts, 1);
+        font-size: 1.75rem;
+        text-align: center;
+        color: nth($colores, 2);
+        margin-bottom: -0.75rem;
+        @media only screen and (min-width: 640px) {
+            font-size: calc(1.75rem *1.1);
+            
+        }
+        @media only screen and (min-width: 768px) {
+            font-size: calc(1.75rem *1.2);
+            
+        }
+    }
+    .ayd-descripcion{
+        text-align: center;
+        font-family: nth($fonts, 2);
+        font-size: 1rem;
+        font-weight: 400;
+        color: nth($colores, 7);
+        @media only screen and (min-width: 640px) {
+            font-size: calc(1rem *1.2);
+            
+        }
+        @media only screen and (min-width: 768px) {
+            font-size: calc(1rem *1.4);
+            
+        }
+    }
+    .ayd-img-container{
+        overflow: scroll;
+        display: flex;
+        @media only screen and (min-width: 968px) {
+            overflow: hidden;
+        }
+        .ayd-img{
+            width: 100vw;
+            @media only screen and (min-width: 968px) {
+                width: 50vw;
+            }
+        }
+    }
+}

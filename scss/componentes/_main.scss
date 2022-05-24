@@ -1,0 +1,29 @@
+.index-main{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (min-width: 768px) {
+        margin: 0 auto;
+    }
+    .main-title{
+        margin-top: 3rem;
+        font-family: nth($fonts, 1);
+        font-weight: 500;
+        color: nth($colores, 2);
+        text-align: center;
+        font-size: 1.75rem;
+        line-height: 2rem;
+        @media only screen and (min-width: 1024px) {
+            font-size: 38px;
+            width: 800px;
+        }
+    }
+    .main-descripcion{
+        font-family: nth($fonts, 2);
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1rem;
+    }
+}

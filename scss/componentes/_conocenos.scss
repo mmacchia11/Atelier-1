@@ -1,0 +1,81 @@
+.conocenos-main{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .conocenos-title{
+        padding: 5rem;
+        font-family: nth($fonts, 1);
+        font-size: 28px;
+        color: nth($colores, 2);
+        font-weight: 600;
+        text-align: center;
+        @media only screen and(min-width: 968px){
+            font-size: 38px;
+        }
+    }
+    .conocenos-description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        .conocenos-description-img{
+            width: 100vw;
+            @media only screen and(min-width: 968px){
+                width: 100vw;
+                height: 496px;
+                object-fit: cover;
+                object-position: 0 15%;
+            }
+        }
+        .conocenos-description-container{
+            margin-top: -2.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: nth($colores, 6);
+            width: 80%;
+            box-shadow: 2px 2px 14px rgba(0, 0, 0, .3);
+            @media only screen and(min-width: 968px){
+                width: 854px;
+                padding: 2rem;
+            }
+            .conocenos-description-text{
+                font-family: nth($fonts, 2);
+                font-size: 1rem;
+                text-align: center;
+                @media only screen and(min-width: 968px){
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+    .conocenos-artist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media only screen and(min-width: 968px){
+            flex-direction: row;       
+            padding: 6rem;
+        }
+        .conocenos-artist-img{
+            width: 100vw;
+            @media only screen and(min-width: 968px){
+                width: 584px;
+            }
+        }
+        .artist-container{
+            padding: 2rem;
+            .conocenos-artist-title{
+                color: nth($colores, 2);
+                font-family: nth($fonts, 1);
+                font-weight: 700;
+            }
+            .conocenos-artist-description{
+                font-family: nth($fonts, 2);
+                @media only screen and(min-width: 968px){
+                    width: 580px;
+                }
+            }
+        }
+    }
+}

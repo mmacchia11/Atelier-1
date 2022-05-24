@@ -1,0 +1,63 @@
+.nav{
+    user-select: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: nth($colores, 1);
+    .nav-logo{
+        width: 150px;
+        margin: .7rem 1rem 0 1rem;
+        @media only screen and (min-width: 968px) {
+            font-size: 38px;
+            width: 20vw;
+        }
+    }
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .nav-links{
+            color: nth($colores, 2);
+            padding: .5rem;
+            list-style-type: none;
+            font-family: nth($fonts, 1);
+            font-size: 1rem;
+            text-transform: capitalize;
+            transition: 1s ease-in;
+            :hover{
+                color: white;
+                text-decoration: underline;
+            }
+            a{
+                padding: .5rem;
+                color: nth($colores, 2);
+                text-decoration: none;
+            }
+        }
+        .nav-whatsapp-container{
+            cursor: pointer;
+            width: 173px;
+            height: 30px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            color: nth($colores, 3);
+            background-color: nth($colores, 2);
+            border-radius: 2.5rem;
+            border: 3px solid nth($colores, 2);
+            .whatsapp-title{
+                align-self: center;
+                font-family: nth($fonts, 1);
+                font-weight: 400;
+                font-size: 1rem;
+            }
+            .whatsapp-ico{
+                font-size: 1rem;
+                align-self: center;
+                margin: 0 0.6rem;
+            }
+        }
+    }
+}

@@ -37,16 +37,14 @@ html, body {
 .nav .nav-menu {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .nav .nav-menu .nav-links {
-  margin-right: 1rem;
-  text-align: center;
   color: #564c49;
   padding: 0.5rem;
   list-style-type: none;
   font-family: "rubik";
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: capitalize;
   transition: 1s ease-in;
 }
@@ -55,158 +53,34 @@ html, body {
   text-decoration: underline;
 }
 .nav .nav-menu .nav-links a {
-  width: 100%;
+  padding: 0.5rem;
   color: #564c49;
   text-decoration: none;
 }
-.nav .nav-whatsapp-container {
+.nav .nav-menu .nav-whatsapp-container {
   cursor: pointer;
   width: 173px;
   height: 30px;
   display: flex;
   align-content: center;
   justify-content: center;
-  align-items: center;
   color: #efefef;
   background-color: #564c49;
   border-radius: 2.5rem;
   border: 3px solid #564c49;
 }
-.nav .nav-whatsapp-container .whatsapp-title {
+.nav .nav-menu .nav-whatsapp-container .whatsapp-title {
   align-self: center;
   font-family: "rubik";
   font-weight: 400;
   font-size: 1rem;
 }
-.nav .nav-whatsapp-container .whatsapp-title a {
-  text-decoration: none;
-  color: #fff;
-}
-.nav .nav-whatsapp-container .enlace-whatsapp {
-  color: #fff;
-  text-align: center;
-  font-size: 1.3rem;
-}
-.nav .nav-whatsapp-container .enlace-whatsapp .whatsapp-ico {
-  /* font-size: 1rem; */
+.nav .nav-menu .nav-whatsapp-container .whatsapp-ico {
+  font-size: 1rem;
   align-self: center;
   margin: 0 0.6rem;
 }
-.nav .menuToggle {
-  display: none;
-}
 
-@media (max-width: 768px) {
-  .nav {
-    display: flex;
-    /* whatsapp */
-  }
-  .nav .nav-menu {
-    display: none;
-  }
-  .nav .menuToggle {
-    display: block;
-    position: relative;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-  .nav .menuToggle a {
-    text-decoration: none;
-    color: #726f6f;
-    transition: color 0.3s ease;
-  }
-  .nav .menuToggle a:hover {
-    color: #fcfcfc;
-    text-decoration: underline;
-  }
-  .nav .menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-    /* and place it over the hamburger */
-    -webkit-touch-callout: none;
-  }
-  .nav .menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #858383;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-  .nav .menuToggle span:first-child {
-    transform-origin: 0% 0%;
-  }
-  .nav .menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-  .nav .menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #7a7979;
-  }
-  .nav .menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  .nav .menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-  .nav .menuToggle .menu {
-    position: absolute;
-    width: 300px;
-    height: 92vh;
-    margin: -100px 0 0 -88px;
-    padding: 50px;
-    padding-top: 125px;
-    background: #e8beac;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-  .nav .menuToggle .menu li {
-    padding: 10px 0;
-    font-size: 22px;
-  }
-  .nav .menuToggle input:checked ~ ul {
-    transform: none;
-  }
-  .nav .nav-whatsapp-container {
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    color: #efefef;
-    background-color: #564c49;
-    border-radius: 2.5rem;
-    border: 3px solid #564c49;
-  }
-  .nav .nav-whatsapp-container .whatsapp-title {
-    display: none;
-  }
-  .nav .nav-whatsapp-container .whatsapp-ico {
-    font-size: 2.5rem;
-    align-self: center;
-    margin: 0 0.6rem;
-  }
-}
 .index-main {
   padding: 3%;
   display: flex;

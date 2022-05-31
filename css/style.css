@@ -166,25 +166,40 @@ html, body {
   }
   .nav .menuToggle .menu {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 300px;
     height: 92vh;
-    margin: -100px 0 0 -88px;
+    margin: -100px 0 0 -95px;
     padding: 50px;
     padding-top: 125px;
     background: #e8beac;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
+    font-family: "rubik";
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
+}
+@media only screen and (max-width: 768px) and (max-width: 480px) {
+  .nav .menuToggle .menu {
+    left: 2rem;
+  }
+}
+@media (max-width: 768px) {
   .nav .menuToggle .menu li {
     padding: 10px 0;
     font-size: 22px;
   }
+}
+@media (max-width: 768px) {
   .nav .menuToggle input:checked ~ ul {
     transform: none;
   }
+}
+@media (max-width: 768px) {
   .nav .nav-whatsapp-container {
     cursor: pointer;
     width: 50px;

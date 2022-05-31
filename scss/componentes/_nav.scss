@@ -1,4 +1,4 @@
-.nav{
+.nav {
     user-select: none;
     padding: 1rem;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
     font-size: 1.6rem;
     background-color: nth($colores, 1);
-    .nav-logo{
+    .nav-logo {
         width: 150px;
         margin: .7rem 1rem 0 1rem;
         @media only screen and (min-width: 968px) {
@@ -14,50 +14,189 @@
             width: 20vw;
         }
     }
-    .nav-menu{
+    .nav-menu {
         display: flex;
         align-items: center;
-        justify-content: center;
-        .nav-links{
+        justify-content: space-evenly;
+        .nav-links {
+            margin-right: 1rem;
+            text-align: center;
             color: nth($colores, 2);
             padding: .5rem;
             list-style-type: none;
             font-family: nth($fonts, 1);
-            font-size: 1rem;
+            font-size: 1.1rem;
             text-transform: capitalize;
             transition: 1s ease-in;
-            :hover{
+            :hover {
                 color: white;
                 text-decoration: underline;
             }
-            a{
-                padding: .5rem;
+            a {
+                width: 100%;
                 color: nth($colores, 2);
                 text-decoration: none;
             }
         }
-        .nav-whatsapp-container{
+    }
+    .nav-whatsapp-container {
+        cursor: pointer;
+        width: 173px;
+        height: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        color: nth($colores, 3);
+        background-color: nth($colores, 2);
+        border-radius: 2.5rem;
+        border: 3px solid nth($colores, 2);
+        .whatsapp-title {
+            align-self: center;
+            font-family: nth($fonts, 1);
+            font-weight: 400;
+            font-size: 1rem;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        .enlace-whatsapp{
+            color: #fff;
+            text-align: center;
+            font-size: 1.3rem;
+            .whatsapp-ico {
+                /* font-size: 1rem; */
+                align-self: center;
+                margin: 0 0.6rem;
+            }
+        }        
+    }
+    .menuToggle {
+        display: none;
+    }
+}
+
+
+@media (max-width:768px) {
+    .nav {        
+        display: flex;
+        .nav-menu {
+            display: none;
+        }
+        .menuToggle {
+            display: block;
+            position: relative;
+            z-index: 1;
+            -webkit-user-select: none;
+            user-select: none;
+            a {
+                text-decoration: none;
+                color: #726f6f;
+                transition: color 0.3s ease;
+            }
+            a {
+                &:hover {
+                color: rgb(252, 252, 252);
+                text-decoration: underline;
+            }
+        }
+            input {
+                display: block;
+                width: 40px;
+                height: 32px;
+                position: absolute;
+                top: -7px;
+                left: -5px;
+                cursor: pointer;
+                opacity: 0;
+                /* hide this */
+                z-index: 2;
+                /* and place it over the hamburger */
+                -webkit-touch-callout: none;
+            }
+            span {
+                display: block;
+                width: 33px;
+                height: 4px;
+                margin-bottom: 5px;
+                position: relative;
+                background: #858383;
+                border-radius: 3px;
+                z-index: 1;
+                transform-origin: 4px 0px;
+                transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                opacity 0.55s ease;
+            }
+            span:first-child {
+                transform-origin: 0% 0%;
+            }
+            span:nth-last-child(2) {
+                transform-origin: 0% 100%;
+            }
+            input:checked~span {
+                opacity: 1;
+                transform: rotate(45deg) translate(-2px, -1px);
+                background: #7a7979;
+            }
+            input:checked~span:nth-last-child(3) {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
+            }
+            input:checked~span:nth-last-child(2) {
+                transform: rotate(-45deg) translate(0, -1px);
+            }
+            .menu {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 300px;
+                height:92vh;
+                margin: -100px 0 0 -95px;
+                padding: 50px;
+                padding-top: 125px;
+                background: #e8beac;
+                list-style-type: none;
+                -webkit-font-smoothing: antialiased;
+                font-family: nth($fonts, 1);
+                transform-origin: 0% 0%;
+                transform: translate(-100%, 0);
+                transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+                @media only screen and (max-width: 480px) {
+                    left: 2rem;
+                }
+                li {
+                    padding: 10px 0;
+                    font-size: 22px;
+                }
+            }
+            input:checked~ul {
+                transform: none;
+            }
+        }
+        /* whatsapp */
+        .nav-whatsapp-container {
             cursor: pointer;
-            width: 173px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
             display: flex;
             align-content: center;
             justify-content: center;
+            align-items: center;
             color: nth($colores, 3);
             background-color: nth($colores, 2);
             border-radius: 2.5rem;
             border: 3px solid nth($colores, 2);
-            .whatsapp-title{
-                align-self: center;
-                font-family: nth($fonts, 1);
-                font-weight: 400;
-                font-size: 1rem;
-            }
-            .whatsapp-ico{
-                font-size: 1rem;
+            .whatsapp-title {
+                display:none;
+            }    
+            .whatsapp-ico {
+                font-size: 2.5rem;
                 align-self: center;
                 margin: 0 0.6rem;
-            }
+            }        
         }
     }
 }

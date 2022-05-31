@@ -1,0 +1,62 @@
+.seccion-ilustraciones{
+    height: 100%;
+    padding: 1rem;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    @media only screen and (min-width: 968px){
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .card-presentacion{
+        max-width: 379px;
+        max-height: 524px;
+        margin: 5px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        background-color: nth($colores, 6);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+        .card-img-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            background-color: nth($colores, 1);
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            
+            .card-img{
+                max-width: 336px;
+            }
+        }
+
+        .card-descripcion-container{
+            padding: 1rem;
+
+            .card-title{
+                font-family: nth($fonts, 1);
+                font-weight: 700;
+                font-size: 1.5rem;
+                color: nth($colores, 2);
+            }
+            
+            .card-subtitle{
+                font-family: nth($fonts, 1);
+                font-weight: 400;
+                font-size: 1rem;
+                color: nth($colores, 5);
+                line-height: 1.1875rem;
+            }
+            
+            .card-descripcion{
+                font-family: nth($fonts, 2);
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+            }
+        }
+    }
+}

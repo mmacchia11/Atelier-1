@@ -1,0 +1,86 @@
+.comopedir-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 3rem;
+    .comopedir-text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        background-image: url("../assets/comopedir/comopedir-fondo.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        .comopedir-title{
+            margin-top: -20px;
+            margin-bottom: .5rem;
+            font-family: nth($fonts, 1);
+            color: nth($colores, 2);
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 2.5rem;
+            text-align: center;
+        }
+    }
+    .comopedir-card-container{
+        @media only screen and (min-width: 968px) {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+        .comopedir-card{
+            height: 100%;
+            margin-top: 3rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @media only screen and (min-width: 968px) {
+                flex-direction: column;
+                align-items: start;
+                justify-items: space-around;
+            }
+            .comopedir-card-icon{
+                margin-bottom: 1rem;
+            }
+            .comopedir-card-description-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @media only screen and (min-width: 968px) {
+                    max-width: 250px;
+                    height: 220px;
+                    padding: 1rem;
+                    align-items: flex-start;
+                    justify-items: flex-start;
+                    border-right: 2px solid nth($colores, 2 );
+                }
+                
+                .comopedir-card-title{
+                    font-family: nth($fonts, 1);
+                    color: nth($colores, 2);
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    line-height: 1.5rem;
+                }
+                .comopedir-card-descripcion{
+                    margin-top: 0;
+                    text-align: center;
+                    font-family: nth($fonts, 2);
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                    color: nth($colores, 7);
+                    @media only screen and (min-width: 968px) {
+                        text-align: start;
+                    }
+                }
+            }
+        }
+    }
+
+}

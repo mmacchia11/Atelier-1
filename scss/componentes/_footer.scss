@@ -11,10 +11,15 @@ footer{
             align-content: center;
             justify-content: center;
             letter-spacing: 3px;
-            color: nth($colores, 3);
             background-color: nth($colores, 2);
             border-radius: 2.5rem;
             border: 3px solid nth($colores, 2);
+            a{
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                color: #efefef;
+            }
             .enviar-whatsapp-title{
                 font-family: nth($fonts, 1);
                 font-weight: 600;
@@ -36,11 +41,16 @@ footer{
             background-color: nth($colores, 3);
             border-radius: 2.5rem;
             border: 3px solid nth($colores, 2);
-            .faq{
+            .faq {
+
+                a{
+                text-decoration: none;
+                color: #564c49;
                 font-family: nth($fonts, 1);
                 font-weight: 600;
                 font-size: 1.125rem;
                 line-height: 1.4rem;
+                }
             }
         }
     }

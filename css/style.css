@@ -117,7 +117,7 @@ html, body {
     transition: color 0.3s ease;
   }
   .nav .menuToggle a:hover {
-    color: #fcfcfc;
+    color: rgb(252, 252, 252);
     text-decoration: underline;
   }
   .nav .menuToggle input {
@@ -549,10 +549,15 @@ footer .contacto .whatsapp-container {
   align-content: center;
   justify-content: center;
   letter-spacing: 3px;
-  color: #efefef;
   background-color: #564c49;
   border-radius: 2.5rem;
   border: 3px solid #564c49;
+}
+footer .contacto .whatsapp-container a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #efefef;
 }
 footer .contacto .whatsapp-container .enviar-whatsapp-title {
   font-family: "rubik";
@@ -575,7 +580,9 @@ footer .contacto .faq-container {
   border-radius: 2.5rem;
   border: 3px solid #564c49;
 }
-footer .contacto .faq-container .faq {
+footer .contacto .faq-container .faq a {
+  text-decoration: none;
+  color: #564c49;
   font-family: "rubik";
   font-weight: 600;
   font-size: 1.125rem;
